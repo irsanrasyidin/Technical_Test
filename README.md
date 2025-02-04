@@ -26,18 +26,19 @@ Golang Developer Technical Test
 
 ## Soal 2:
  - Penjelasan Pentingnya **Unit Testing** dalam Pengembangan Software:
-1. Menjamin Keandalan Kode: Unit testing memastikan bahwa setiap bagian kecil dari aplikasi (fungsi atau metode) bekerja seperti yang diharapkan. Ini membantu menemukan dan memperbaiki bug pada tahap awal sebelum kode digabungkan dengan bagian lain dari sistem.
+1. **Menjamin Keandalan Kode:**
+   Unit testing memastikan bahwa setiap bagian kecil dari aplikasi (fungsi atau metode) bekerja seperti yang diharapkan. Ini membantu menemukan dan memperbaiki bug pada tahap awal sebelum kode digabungkan dengan bagian lain dari sistem.
 
-2. Meningkatkan Kepercayaan Developer: 
+2. **Meningkatkan Kepercayaan Developer:** 
    Dengan memiliki unit tests yang baik, pengembang dapat lebih percaya diri dalam perubahan atau refactor kode. Hal ini juga memudahkan untuk memahami kode yang lebih kompleks, karena pengujian membuktikan bahwa fungsionalitas tertentu berjalan sesuai yang diinginkan.
 
-3. Mempermudah Perubahan dan Refactoring: 
+3. **Mempermudah Perubahan dan Refactoring:** 
    Dengan adanya unit test, perubahan kode (refactoring) dapat dilakukan dengan lebih mudah. Jika ada perubahan yang tidak diinginkan, unit test akan segera memberi tahu jika ada fungsionalitas yang rusak, menghindari regresi.
 
-4. Dokumentasi Kode: 
+4. **Dokumentasi Kode:** 
    Unit test berfungsi sebagai dokumentasi untuk kode. Pengembang baru dapat melihat bagaimana fungsi diharapkan bekerja hanya dengan melihat unit test yang ada.
 
-5. Pengurangan Biaya Pemeliharaan: 
+5. **Pengurangan Biaya Pemeliharaan:** 
    Unit testing mengurangi biaya pemeliharaan jangka panjang, karena deteksi masalah pada tahap awal dapat mengurangi waktu yang dibutuhkan untuk mengidentifikasi dan memperbaiki bug saat aplikasi sudah berjalan.
 
 ## Soal 3:
