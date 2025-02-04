@@ -2,7 +2,7 @@
 Golang Developer Technical Test
 
 ## Soal 1:
- -saya disini menggunakan gin dengan arsitecture yang saya kuasai, dimana terdapat Direktori config, controller, manager, middleware, models, service, dan utils
+ - saya disini menggunakan gin dengan arsitecture yang saya kuasai, dimana terdapat Direktori config, controller, manager, middleware, models, service, dan utils
 1. **config/**  
    Berisi file konfigurasi yang digunakan oleh aplikasi, seperti pengaturan koneksi database, environment variables, atau konfigurasi lain yang diperlukan oleh sistem.
 
