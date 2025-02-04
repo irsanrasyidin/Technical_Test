@@ -2,7 +2,27 @@
 Golang Developer Technical Test
 
 ## Soal 1:
+ -saya disini menggunakan gin dengan arsitecture yang saya kuasai, dimana terdapat Direktori config, controller, manager, middleware, models, service, dan utils
+1. **config/**  
+   Berisi file konfigurasi yang digunakan oleh aplikasi, seperti pengaturan koneksi database, environment variables, atau konfigurasi lain yang diperlukan oleh sistem.
 
+2. **controller/**  
+   Menangani request dari klien dan memberikan response. Controller ini bertanggung jawab untuk memanggil service dan manager untuk memproses logika lebih lanjut serta memberikan hasil kepada klien.
+
+3. **manager/**  
+   Biasanya berisi logika bisnis yang lebih kompleks dan berhubungan dengan pengelolaan data atau model. Manager menangani operasi yang melibatkan lebih dari satu entitas atau operasi yang memerlukan aturan bisnis tertentu.
+
+4. **middleware/**  
+   Berfungsi untuk memfilter request sebelum diteruskan ke controller. Middleware bisa digunakan untuk berbagai tujuan seperti autentikasi, logging, validasi input, atau pengelolaan session.
+
+5. **models/**  
+   Berisi representasi data atau struktur yang digunakan dalam aplikasi, sering kali berhubungan langsung dengan database atau API eksternal. Di sini juga bisa ditemukan definisi model untuk ORM (seperti GORM) yang memetakan data ke dalam bentuk yang dapat dikelola aplikasi.
+
+6. **service/**  
+   Berisi logika yang lebih spesifik yang menangani pengolahan data atau komunikasi dengan layanan eksternal, seperti interaksi dengan database, API eksternal, atau pengolahan data yang lebih rumit.
+
+7. **utils/**  
+   Menyimpan berbagai fungsi utilitas yang dapat digunakan di berbagai bagian aplikasi, seperti helper functions, validasi umum, atau tools lainnya yang mendukung operasi aplikasi.
 ## Soal 2:
 
 ## Soal 3:
