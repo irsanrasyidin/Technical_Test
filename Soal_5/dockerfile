@@ -1,0 +1,33 @@
+# Stage pertama: Build aplikasi
+FROM golang:1.23.4 AS builder
+
+# Set direktori kerja dalam container
+WORKDIR /app
+
+# Copy go.mod dan go.sum untuk instalasi dependensi
+COPY Soal_1/go.mod Soal_1/go.sum ./
+RUN go mod download
+
+# Copy seluruh kode dari Soal_1 ke dalam container
+COPY Soal_1/ ./
+
+# Build aplikasi dan beri nama output 'app'
+RUN CGO_ENABLED=0 GOOS=linux go build -o app
+
+# Stage kedua: Membuat image lebih kecil
+FROM alpine:latest
+
+# Set working directory
+WORKDIR /root/
+
+# Copy file binary dari stage builder
+COPY --from=builder /app/app .
+
+# Copy file .env dari Soal_1 ke dalam container
+COPY Soal_1/.env .env
+
+# Expose port 8080
+EXPOSE 8080
+
+# Jalankan aplikasi
+CMD ["./app"]

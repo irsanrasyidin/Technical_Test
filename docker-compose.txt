@@ -1,0 +1,41 @@
+version: '3.8'
+
+networks:
+  mynetwork: 
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-container
+    environment:
+      POSTGRES_DB: //isi sesuai dengan konfiurasi postgre anda
+      POSTGRES_USER: //isi sesuai dengan konfiurasi postgre anda
+      POSTGRES_PASSWORD: //isi sesuai dengan konfiurasi postgre anda
+    ports:
+      - "5432:5432"  
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - mynetwork  
+
+  app:
+    build:
+      context: .
+      dockerfile: Soal_5/dockerfile
+    container_name: myapp-container
+    environment:
+      DB_HOST: //isi sesuai dengan konfiurasi postgre anda
+      DB_PORT: //isi sesuai dengan konfiurasi postgre anda  
+      DB_NAME: //isi sesuai dengan konfiurasi postgre anda
+      DB_USER: //isi sesuai dengan konfiurasi postgre anda
+      DB_PASSWORD: //isi sesuai dengan konfiurasi postgre anda
+      APP_PORT: //isi sesuai dengan konfiurasi postgre anda  
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    networks:
+      - mynetwork  
+
+volumes:
+  postgres_data:
