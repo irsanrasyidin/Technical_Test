@@ -78,3 +78,23 @@ Golang Developer Technical Test
     ```
 
 ## Soal 5:
+- Manfaat Menggunakan Containerization dalam Pengembangan Software
+Containerization adalah teknik yang membungkus aplikasi beserta dependensinya ke dalam satu unit yang ringan dan portabel. Manfaat utama dari containerization dalam pengembangan software adalah:
+
+1. **Portabilitas:** 
+   Aplikasi yang dikemas dalam container dapat berjalan di berbagai lingkungan tanpa perlu konfigurasi ulang.
+
+2. **Isolasi:** 
+   Setiap container berjalan secara independen, sehingga perubahan dalam satu container tidak akan memengaruhi yang lain.
+
+3. **Konsistensi Lingkungan:** 
+   Developer, tester, dan tim produksi bisa menggunakan lingkungan yang sama, menghindari masalah "it works on my machine".
+
+4. **Efisiensi Resource:** 
+   Dibandingkan dengan VM, container lebih ringan karena berbagi kernel OS dan hanya menjalankan proses yang diperlukan.
+
+5. **Deployment yang Cepat:** 
+   Container dapat di-deploy dalam hitungan detik, mempercepat siklus pengembangan dan deployment.
+
+6. **Scalability:** 
+   Mudah di-scale secara horizontal dengan menambah atau mengurangi jumlah container sesuai beban kerja.
